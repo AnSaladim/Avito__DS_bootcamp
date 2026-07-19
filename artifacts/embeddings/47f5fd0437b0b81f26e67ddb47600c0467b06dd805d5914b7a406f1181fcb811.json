@@ -1,0 +1,17 @@
+{
+  "model_name": "Qwen/Qwen3-Embedding-0.6B",
+  "model_revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "kind": "queries_task_instruction",
+  "text_hash": "658a894bd397d0a98ab003f42e293a3cc880cf4ee26d73a3ec0867f252d8b6d5",
+  "max_length": 512,
+  "normalization": true,
+  "preprocessing_version": "html-v1",
+  "instruction": "Given a short Russian customer-support query, retrieve Avito help-center passages that contain the information needed to answer it. Multiple passages may be relevant.",
+  "cache_version": "qwen-embedding-v2",
+  "parameter_count": 595776512,
+  "matrix_shape": [
+    500,
+    1024
+  ],
+  "dtype": "float32"
+}

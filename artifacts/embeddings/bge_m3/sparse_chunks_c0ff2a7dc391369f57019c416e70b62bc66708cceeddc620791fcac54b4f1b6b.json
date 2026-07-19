@@ -1,0 +1,16 @@
+{
+  "model_name": "BAAI/bge-m3",
+  "model_revision": "c01c5b303a87da9c91d581256f0af47b5e0a9bd1",
+  "text_hash": "c0ff2a7dc391369f57019c416e70b62bc66708cceeddc620791fcac54b4f1b6b",
+  "max_length": 512,
+  "normalization": true,
+  "preprocessing_version": "html-v1",
+  "cache_version": "bge-m3-dense-sparse-v2",
+  "parameter_count": 568805377,
+  "kind": "sparse_chunks",
+  "matrix_shape": [
+    4421,
+    250002
+  ],
+  "dtype": "float32"
+}

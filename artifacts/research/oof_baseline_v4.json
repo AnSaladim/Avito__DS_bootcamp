@@ -1,0 +1,174 @@
+{
+  "array_schema": {
+    "article_ids": {
+      "dtype": "int64",
+      "shape": [
+        793
+      ]
+    },
+    "bge_dense_scores": {
+      "dtype": "float32",
+      "shape": [
+        500,
+        793
+      ]
+    },
+    "bge_sparse_scores": {
+      "dtype": "float32",
+      "shape": [
+        500,
+        793
+      ]
+    },
+    "bm25_scores": {
+      "dtype": "float32",
+      "shape": [
+        500,
+        793
+      ]
+    },
+    "candidate_rankings": {
+      "dtype": "int64",
+      "shape": [
+        500,
+        50
+      ]
+    },
+    "char_scores": {
+      "dtype": "float32",
+      "shape": [
+        500,
+        793
+      ]
+    },
+    "chunk_scores": {
+      "dtype": "float32",
+      "shape": [
+        500,
+        793
+      ]
+    },
+    "final_rankings": {
+      "dtype": "int64",
+      "shape": [
+        500,
+        50
+      ]
+    },
+    "final_scores": {
+      "dtype": "float32",
+      "shape": [
+        500,
+        793
+      ]
+    },
+    "fold_ids": {
+      "dtype": "int64",
+      "shape": [
+        500
+      ]
+    },
+    "knn_scores": {
+      "dtype": "float32",
+      "shape": [
+        500,
+        793
+      ]
+    },
+    "max_neighbor_similarity": {
+      "dtype": "float32",
+      "shape": [
+        500
+      ]
+    },
+    "qwen_scores": {
+      "dtype": "float32",
+      "shape": [
+        500,
+        793
+      ]
+    },
+    "relation_scores": {
+      "dtype": "float32",
+      "shape": [
+        500,
+        793
+      ]
+    },
+    "reranker_scores": {
+      "dtype": "float32",
+      "shape": [
+        500,
+        793
+      ]
+    },
+    "retrieval_scores": {
+      "dtype": "float32",
+      "shape": [
+        500,
+        793
+      ]
+    },
+    "word_scores": {
+      "dtype": "float32",
+      "shape": [
+        500,
+        793
+      ]
+    }
+  },
+  "article_ids_hash": "d7dc7873a1b2cfa5595e95e1e768a596199689414d38b89f82ff93fd38f83aa0",
+  "cache_version": 4,
+  "candidate_pool_size": 50,
+  "created_by_function": "compute_label_neutral_oof_baseline",
+  "documents_hash": "3c06d8edb0b766edc25d4c5bf47482781d56b52fbf6df34cf19d628ad4a36389",
+  "models": {
+    "bge_m3": {
+      "name": "BAAI/bge-m3",
+      "revision": "c01c5b303a87da9c91d581256f0af47b5e0a9bd1"
+    },
+    "qwen": {
+      "name": "Qwen/Qwen3-Embedding-0.6B",
+      "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3"
+    },
+    "reranker": {
+      "name": "BAAI/bge-reranker-v2-m3",
+      "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+    }
+  },
+  "normalization_method": "row_minmax",
+  "preprocessing_version": "html-v1",
+  "queries_hash": "8640acd796046efef4965ecd1c367557423fe96dc4d93d6f76207671c918a466",
+  "retrieval_config": {
+    "base_weights": {
+      "bm25": 0.2,
+      "char": 0.75,
+      "chunk_max": 0.45,
+      "dense_article_task": 0.35,
+      "dense_chunk_task": 0.75,
+      "word_body": 1.0,
+      "word_title": 0.35
+    },
+    "bge_m3_batch_size": 16,
+    "bge_m3_dense_weight": 0.75,
+    "bge_m3_retrieval_weight": 0.5,
+    "bge_m3_sparse_weight": 0.25,
+    "candidate_top_n": 50,
+    "legacy_base_weight": 0.5,
+    "qwen_batch_size": 8,
+    "reranker_base_weight": 0.5,
+    "reranker_batch_size": 128,
+    "reranker_max_length": 512,
+    "seed": 42
+  },
+  "score_sources": [
+    "BM25",
+    "word TF-IDF",
+    "char TF-IDF",
+    "chunk TF-IDF",
+    "Qwen dense",
+    "BGE-M3 dense",
+    "BGE-M3 sparse",
+    "BGE reranker"
+  ]
+}

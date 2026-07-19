@@ -1,0 +1,27 @@
+{
+  "cache_version": "bge-reranker-v2",
+  "model_name": "BAAI/bge-reranker-v2-m3",
+  "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+  "model_revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+  "parameter_count": 567755777,
+  "device": "cuda",
+  "model_dtype": "torch.float16",
+  "dtype": "float32",
+  "matrix_shape": [
+    500,
+    50,
+    2
+  ],
+  "batch_size": 128,
+  "pairs": 47460,
+  "runtime_seconds": 877.8602950000059,
+  "max_length": 512,
+  "query_hash": "3b629da2105ae8a3d3cb0d1857822ac8d74f22f784c6a96b6f1d26ac2e3bc5d4",
+  "candidate_hash": "14643edb03c0575f180b9cfc9d23b72e4c9ee77bf276cc1a85cec5c5aae24366",
+  "preprocessing_version": "html-v1",
+  "chunk_selection_strategy": "qwen_dense_2",
+  "top_n": 50,
+  "max_chunks_per_article": 2,
+  "peak_vram_mb": 2565.16015625,
+  "cache_hit": false
+}

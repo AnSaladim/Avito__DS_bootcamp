@@ -1,0 +1,17 @@
+{
+  "model_name": "Qwen/Qwen3-Embedding-0.6B",
+  "model_revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "kind": "chunks",
+  "text_hash": "c0ff2a7dc391369f57019c416e70b62bc66708cceeddc620791fcac54b4f1b6b",
+  "max_length": 512,
+  "normalization": true,
+  "preprocessing_version": "html-v1",
+  "instruction": null,
+  "cache_version": "qwen-embedding-v2",
+  "parameter_count": 595776512,
+  "matrix_shape": [
+    4421,
+    1024
+  ],
+  "dtype": "float32"
+}

@@ -1,0 +1,21 @@
+{
+  "article_ids_hash": "d7dc7873a1b2cfa5595e95e1e768a596199689414d38b89f82ff93fd38f83aa0",
+  "cache_version": 2,
+  "created_by_function": "build_prototype_features_full",
+  "documents_hash": "3c06d8edb0b766edc25d4c5bf47482781d56b52fbf6df34cf19d628ad4a36389",
+  "dtype": "float32",
+  "matrix_shape": [
+    500,
+    793
+  ],
+  "preprocessing_version": "html-v1",
+  "prototype_config": {
+    "char_max_features": 30000,
+    "char_weight": 0.35,
+    "word_max_features": 80000,
+    "word_weight": 0.65
+  },
+  "source_labels_hash": "6e7e88a20b8493f2207b39ba6f169e7348205a41a274bdf5762deb68f22bbe6d",
+  "source_queries_hash": "8640acd796046efef4965ecd1c367557423fe96dc4d93d6f76207671c918a466",
+  "target_queries_hash": "1b0769802fcd6415aecd84225c6344f12f3265caf65a15f73c00fce799eb4d62"
+}
